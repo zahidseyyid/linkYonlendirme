@@ -8,11 +8,11 @@
         function redirect() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
             if (/android/i.test(userAgent)) {
-                window.location.href = "https://play.google.com/store/apps/details?id=YOUR_ANDROID_APP_ID";
+                window.location.href = "https://play.google.com/store/apps/details?id=com.android.chrome&hl=tr";
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                window.location.href = "https://apps.apple.com/app/idYOUR_IOS_APP_ID";
+                window.location.href = "https://apps.apple.com/tr/app/google-chrome/id535886823";
             } else {
-                document.getElementById('message').innerHTML = "Please visit this page on an Android or iOS device to download the app.";
+                window.location.href = "https://play.google.com/store/apps/details?id=com.android.chrome&hl=tr";
             }
         }
     </script>
